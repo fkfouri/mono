@@ -1,1 +1,1 @@
-docker run -it --rm -v "app:/app" -w "/app" mono
+docker run -it --rm -v "/my_app:/my_app" -w "/my_app" mono
