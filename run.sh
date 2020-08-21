@@ -1,1 +1,1 @@
-docker run -it --rm -v "/my_app:/my_app" -w "/my_app" mono
+docker run -it --rm -v "/mnt/e/Projetos/Mono/my_app/:/my_app" -w "/my_app" -p 9000:9000 mono bash

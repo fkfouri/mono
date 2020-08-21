@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for x; do
+if [[ $x = '/tmp'* ]]; then
+sed -i '1{/#Externa/d}' $x
+fi
+done
+
+exec /usr/bin/mono /usr/lib/mono/4.5/vbnc.exe "$@"
